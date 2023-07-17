@@ -21,4 +21,4 @@ Resources:
               - sqs:CreateQueue
             Resource: "*"
       Users:
-        - Ref: app-dev
+        - Ref: MyUser
