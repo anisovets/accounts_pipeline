@@ -20,9 +20,5 @@ Resources:
             Action:
               - sqs:CreateQueue
             Resource: "*"
-          - Effect: Allow
-            Action:
-              - iam: GetUser
-            Resource: "*"
       Users:
         - Ref: MyUser
