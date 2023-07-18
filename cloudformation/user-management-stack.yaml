@@ -16,9 +16,9 @@ Resources:
             Action:
               - s3:CreateBucket
             Resource: "*"
-  #        - Effect: Allow
-  #          Action:
-  #            - sqs:CreateQueue
-  #          Resource: "*"
+          - Effect: Allow
+            Action:
+              - sqs:CreateQueue
+            Resource: "*"
       Users:
         - Ref: MyUser
