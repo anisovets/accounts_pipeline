@@ -23,6 +23,10 @@ Resources:
           - Effect: Allow
             Action:
               - cloudformation:DescribeStacks  
+              - cloudformation:CreateChangeSet
+              - cloudformation:CreateStack
+              - cloudformation:ExecuteChangeSet
+              - cloudformation:DescribeChangeSet
             Resource: "*"
       Users:
         - Ref: MyUser
