@@ -20,5 +20,9 @@ Resources:
             Action:
               - sqs:CreateQueue
             Resource: "*"
+          - Effect: Allow
+            Action:
+              - cloudformation:DescribeStacks  
+            Resource: "*"
       Users:
         - Ref: MyUser
