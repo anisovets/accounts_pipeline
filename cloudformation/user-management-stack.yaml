@@ -53,6 +53,9 @@ Resources:
               - ecr:CreateRepository
             Resource: "*"
           - Effect: Allow
+            Actions:
+              - iam:GetRole
+          - Effect: Allow
             Action:
               - cloudformation:DescribeStacks  
               - cloudformation:CreateChangeSet
