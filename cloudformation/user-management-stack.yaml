@@ -60,6 +60,8 @@ Resources:
               - iam:PutRolePolicy
               - iam:DeleteRolePolicy
               - iam:GetRolePolicy
+              - iam:DeleteRole
+              - iam:PassRole
             Resource: "*"
           - Effect: Allow
             Action:
@@ -68,6 +70,7 @@ Resources:
           - Effect: Allow
             Action: 
               - lambda:GetFunction
+              - lambda:DeleteFunction
             Resource: "*"
           - Effect: Allow
             Action:
