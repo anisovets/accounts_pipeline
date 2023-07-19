@@ -55,6 +55,7 @@ Resources:
           - Effect: Allow
             Action:
               - iam:GetRole
+              - iam:CreateRole
             Resource: "*"
           - Effect: Allow
             Action:
