@@ -53,7 +53,7 @@ Resources:
               - ecr:CreateRepository
             Resource: "*"
           - Effect: Allow
-            Actions:
+            Action:
               - iam:GetRole
             Resource: "*"
           - Effect: Allow
