@@ -16,25 +16,25 @@ Resources:
         Statement:
           - Effect: Allow
             Action:
-              - s3: CreateBucket
-              - s3: ListBucket
-              - s3: GetBucketLocation
-              - s3: DeleteBucket
-              - s3: GetBucketPolicy
-              - s3: PutBucketPolicy
-              - s3: GetObject
-              - s3: PutObject
-              - s3: DeleteObject
+              - s3:CreateBucket
+              - s3:ListBucket
+              - s3:GetBucketLocation
+              - s3:DeleteBucket
+              - s3:GetBucketPolicy
+              - s3:PutBucketPolicy
+              - s3:GetObject
+              - s3:PutObject
+              - s3:DeleteObject
             Resource: "*"
           - Effect: Allow
             Action:
-              - sqs: CreateQueue
-              - sqs: GetQueueAttributes
-              - sqs: SetQueueAttributes
-              - sqs: DeleteQueue
-              - sqs: SendMessage
-              - sqs: ReceiveMessage
-              - sqs: DeleteMessage
+              - sqs:CreateQueue
+              - sqs:GetQueueAttributes
+              - sqs:SetQueueAttributes
+              - sqs:DeleteQueue
+              - sqs:SendMessage
+              - sqs:ReceiveMessage
+              - sqs:DeleteMessage
             Resource: "*"
           - Effect: Allow
             Action:
