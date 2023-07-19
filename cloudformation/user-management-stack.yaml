@@ -55,6 +55,7 @@ Resources:
           - Effect: Allow
             Actions:
               - iam:GetRole
+            Resource: "*"
           - Effect: Allow
             Action:
               - cloudformation:DescribeStacks  
