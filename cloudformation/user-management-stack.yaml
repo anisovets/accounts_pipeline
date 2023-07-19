@@ -51,6 +51,7 @@ Resources:
               - ecr:CompleteLayerUpload
               - ecr:PutImage
               - ecr:CreateRepository
+              - ecr:DeleteRepository
             Resource: "*"
           - Effect: Allow
             Action:
@@ -58,6 +59,15 @@ Resources:
               - iam:CreateRole
               - iam:PutRolePolicy
               - iam:DeleteRolePolicy
+              - iam:GetRolePolicy
+            Resource: "*"
+          - Effect: Allow
+            Action:
+              - codebuild:CreateProject
+            Resource: "*"
+          - Effect: Allow
+            Action: 
+              - lambda:GetFunction
             Resource: "*"
           - Effect: Allow
             Action:
