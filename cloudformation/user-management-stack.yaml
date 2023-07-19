@@ -4,6 +4,8 @@ Resources:
     Type: AWS::IAM::User
     Properties:
       UserName: app-dev
+    UpdatePolicy:
+      Retain: true
 
   MyUserPolicy:
     Type: AWS::IAM::Policy
