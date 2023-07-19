@@ -76,6 +76,7 @@ Resources:
             Action: 
               - lambda:GetFunction
               - lambda:DeleteFunction
+              - lambda:CreateFunction
             Resource: "*"
           - Effect: Allow
             Action:
