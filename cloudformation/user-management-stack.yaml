@@ -68,6 +68,7 @@ Resources:
             Action:
               - codebuild:CreateProject
               - codebuild:DeleteProject
+              - codebuild:UpdateProject
             Resource: "*"
 
           - Effect: Allow
