@@ -88,6 +88,7 @@ Resources:
               - cloudformation:CreateStack
               - cloudformation:ExecuteChangeSet
               - cloudformation:DescribeChangeSet
+              - cloudformation:DeleteChangeSet
             Resource: "*"
       Users:
         - Ref: MyUser
