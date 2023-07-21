@@ -52,6 +52,7 @@ Resources:
               - ecr:PutImage
               - ecr:CreateRepository
               - ecr:DeleteRepository
+              - ecr:GetRegistryPolicy
             Resource: "*"
           - Effect: Allow
             Action:
