@@ -82,6 +82,7 @@ Resources:
               - lambda:GetFunction
               - lambda:DeleteFunction
               - lambda:CreateFunction
+              - lambda:UpdateFunctionConfiguration
             Resource: "*"
           - Effect: Allow
             Action:
