@@ -53,6 +53,7 @@ Resources:
               - ecr:CreateRepository
               - ecr:DeleteRepository
               - ecr:GetRegistryPolicy
+              - ecr:SetRepositoryPolicy
             Resource: "*"
           - Effect: Allow
             Action:
