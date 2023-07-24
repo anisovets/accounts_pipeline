@@ -83,6 +83,7 @@ Resources:
               - lambda:DeleteFunction
               - lambda:CreateFunction
               - lambda:UpdateFunctionConfiguration
+              - lambda:UpdateFunctionConfiguration
             Resource: "*"
           - Effect: Allow
             Action:
