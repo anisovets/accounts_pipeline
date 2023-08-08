@@ -93,6 +93,7 @@ Resources:
               - cloudformation:ExecuteChangeSet
               - cloudformation:DescribeChangeSet
               - cloudformation:DeleteChangeSet
+              - cloudformation:DeleteStack
             Resource: "*"
       Users:
         - Ref: MyUser
