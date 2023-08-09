@@ -94,6 +94,7 @@ Resources:
               - cloudformation:DescribeChangeSet
               - cloudformation:DeleteChangeSet
               - cloudformation:DeleteStack
+              - ecr:BatchDeleteImage
             Resource: "*"
       Users:
         - Ref: MyUser
