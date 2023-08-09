@@ -54,6 +54,7 @@ Resources:
               - ecr:DeleteRepository
               - ecr:GetRegistryPolicy
               - ecr:SetRepositoryPolicy
+              - ecr:BatchDeleteImage
             Resource: "*"
           - Effect: Allow
             Action:
@@ -94,7 +95,6 @@ Resources:
               - cloudformation:DescribeChangeSet
               - cloudformation:DeleteChangeSet
               - cloudformation:DeleteStack
-              - ecr:BatchDeleteImage
             Resource: "*"
       Users:
         - Ref: MyUser
