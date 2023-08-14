@@ -85,6 +85,8 @@ Resources:
               - lambda:CreateFunction
               - lambda:UpdateFunctionConfiguration
               - lambda:UpdateFunctionConfiguration
+              - lambda:RemovePermission
+              - lambda:AddPermission
             Resource: "*"
           - Effect: Allow
             Action:
