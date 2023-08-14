@@ -25,6 +25,7 @@ Resources:
               - s3:GetObject
               - s3:PutObject
               - s3:DeleteObject
+              - s3:PutBucketNotification
             Resource: "*"
           - Effect: Allow
             Action:
@@ -87,6 +88,7 @@ Resources:
               - lambda:UpdateFunctionConfiguration
               - lambda:RemovePermission
               - lambda:AddPermission
+              - lambda:GetFunctionConfiguration
             Resource: "*"
           - Effect: Allow
             Action:
